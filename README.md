@@ -70,9 +70,9 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
 
 ---
 
-## MACHINE LEARNING OBJECTIVES
+## Machine learning Objectives
 
-#### **1. Model Training & Accuracy**
+### **1. Model Training & Accuracy**
 - **Objective**: Train a Random Forest classifier with >95% accuracy
 - **Achieved** : 99.5% accuracy on NSL-KDD dataset
 - **Technical Details**:
@@ -80,7 +80,7 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
   - 41 feature dimensions per connection
   - Binary classification: Normal (0) vs Attack (1)
 
-#### **2. Feature Engineering**
+### **2. Feature Engineering**
 - **Objective**: Extract 41 meaningful features from raw packets
 - **Features Included**:
   - Basic: src_bytes, dst_bytes, duration
@@ -88,21 +88,21 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
   - Traffic: count, serror_rate, rerror_rate
   - Host-based: dst_host_count, dst_host_srv_count
 
-#### **3. Model Persistence**
+### **3. Model Persistence**
 - **Objective**: Save trained model for real-time use
 - **Implementation**: `joblib.dump(model, 'trained_model.pkl')`
 - **Purpose**: Avoid retraining for each deployment
 
 ---
 
-## NETWORK PROGRAMMING OBJECTIVES
+## Network Programming Objectives
 
-#### **4. Real-Time Packet Capture**
+### **4. Real-Time Packet Capture**
 - **Objective** : Capture live network packets without storage overhead
 - **Technology**: Scapy library with callback architecture
 - **Implementation**: `sniff(prn=callback, store=False)`
 
-#### **5. Protocol Analysis**
+### **5. Protocol Analysis**
 - **Objective**: Parse and analyze multiple network protocols
 - **Protocols Handled**:
   - TCP (flags, ports, sequencing)
@@ -110,16 +110,16 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
   - ICMP (type, code)
   - IP (TTL, fragmentation)
 
-#### **6. Interface Agnostic Capture**
+### **6. Interface Agnostic Capture**
 - **Objective**: Work across different network configurations
 - **Solution**: `iface=None` parameter for automatic interface detection
 - **Tested On**: eth0, lo, and virtual interfaces
 
 ---
 
-## SOFTWARE ARCHITECTURE OBJECTIVES
+## Software Architecture Objectives
 
-#### **7. Modular Design**
+### **7. Modular Design**
 - **Objective**: Separate concerns into independent modules
 - **Module Structure**:
   - `packet_sniffer.py` - Data collection
@@ -127,23 +127,23 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
   - `ids.py` - Real-time detection
   - `app.py` - Web interface
 
-#### **8. Real-Time Processing Pipeline**
+### **8. Real-Time Processing Pipeline**
 - **Objective**: Process packets with minimal latency
 - **Pipeline Flow**:
   ```
   Packet → Feature Extraction → ML Classification → Alert Generation
   ```
 
-#### **9. Error Handling & Resilience**
+### **9. Error Handling & Resilience**
 - **Objective**: Continue operation despite malformed packets
 - **Implementation**: Try-catch blocks around packet processing
 - **Result**: System doesn't crash on unexpected network data
 
 ---
 
-## WEB DEVELOPMENT OBJECTIVES
+## Web development Objectives
 
-#### **10. Real-Time Dashboard**
+### **10. Real-Time Dashboard**
 - **Objective**: Provide live security monitoring interface
 - **Technologies**: Flask + JavaScript + Chart.js
 - **Features**:
@@ -151,7 +151,7 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
   - Live security alerts stream
   - Traffic visualization charts
 
-#### **11. RESTful API Design**
+### **11. RESTful API Design**
 - **Objective**: Create clean data interfaces
 - **Endpoints Implemented**:
   - `GET /api/stats` - Current statistics
@@ -159,7 +159,7 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
   - `GET /api/traffic` - Chart data
   - `POST /api/add_alert` - Alert simulation
 
-#### **12. Responsive UI/UX**
+### **12. Responsive UI/UX**
 - **Objective**: Professional, accessible interface
 - **Features**:
   - CSS animations and hover effects
@@ -169,23 +169,23 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
 
 ---
 
-## SYSTEM INTEGRATION OBJECTIVES
+## System Integration Objectives
 
-#### **13. Cross-Platform Compatibility**
+### **13. Cross-Platform Compatibility**
 - **Objective**: Work on Linux (Kali) with VMware virtualization
 - **Challenges Solved**:
   - Network interface detection in VMs
   - Permission management for packet capture
   - Dependency isolation between user/root
 
-#### **14. Performance Optimization**
+### **14. Performance Optimization**
 - **Objective**: Handle high-speed network traffic
 - **Techniques**:
   - Minimal packet storage (`store=False`)
   - Efficient feature extraction
   - Batch prediction capabilities
 
-#### **15. Deployment Readiness**
+### **15. Deployment Readiness**
 - **Objective**: Production-like environment setup
 - **Infrastructure**:
   - Virtual machine isolation
@@ -194,14 +194,14 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
 
 ---
 
-## DATA MANAGEMENT OBJECTIVES
+## Data Management Objectives
 
-#### **16. Structured Data Handling**
+### **16. Structured Data Handling**
 - **Objective**: Convert raw packets to ML-ready features
 - **Technology**: Pandas DataFrames
 - **Process**: Raw packets → Feature vectors → Predictions
 
-#### **17. Logging & Alert Storage**
+### **17. Logging & Alert Storage**
 - **Objective**: Maintain attack history for analysis
 - **Implementation**: In-memory storage with JSON serialization
 - **Features**: Timestamped alerts with full context
