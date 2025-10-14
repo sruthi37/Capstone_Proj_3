@@ -70,7 +70,7 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
 
 ---
 
-### Machine Learning Objectives
+## MACHINE LEARNING OBJECTIVES
 
 #### **1. Model Training & Accuracy**
 - **Objective**: Train a Random Forest classifier with >95% accuracy
@@ -95,7 +95,7 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
 
 ---
 
-### Network Programming Objectives
+## NETWORK PROGRAMMING OBJECTIVES
 
 #### **4. Real-Time Packet Capture**
 - **Objective** : Capture live network packets without storage overhead
@@ -117,7 +117,7 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
 
 ---
 
-### Software Architecture Objectives
+## SOFTWARE ARCHITECTURE OBJECTIVES
 
 #### **7. Modular Design**
 - **Objective**: Separate concerns into independent modules
@@ -141,7 +141,7 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
 
 ---
 
-### Web Development Objectives
+## WEB DEVELOPMENT OBJECTIVES
 
 #### **10. Real-Time Dashboard**
 - **Objective**: Provide live security monitoring interface
@@ -169,7 +169,7 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
 
 ---
 
-### System Integration Objectives
+## SYSTEM INTEGRATION OBJECTIVES
 
 #### **13. Cross-Platform Compatibility**
 - **Objective**: Work on Linux (Kali) with VMware virtualization
@@ -194,7 +194,7 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
 
 ---
 
-### Data Management Objectives
+## DATA MANAGEMENT OBJECTIVES
 
 #### **16. Structured Data Handling**
 - **Objective**: Convert raw packets to ML-ready features
@@ -208,7 +208,7 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
 
 ---
 
-### **✅ All Technical Objectives Achieved:**
+## All Technical Objectives Achieved:
 
 | **CATEGORY**   |                   **OBJECTIVES**                        |  **STATUS** |
 |----------------|---------------------------------------------------------|-------------|
