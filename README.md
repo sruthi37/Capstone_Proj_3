@@ -221,7 +221,152 @@ To design and implement a **complete Network Intrusion Detection System (NIDS)**
 ---
 
 
+## TOOLS AND TECHNOLOGY
 
+---
+
+### Core Technologies
+
+|       **Category**       |      **Technology**         |             **Purpose**                  |
+|--------------------------|-----------------------------|------------------------------------------|
+| **Programming Language** | Python 3.11                 | Main development language                |
+| **Machine Learning**     | Scikit-learn 1.3.2          | Random Forest classification             |
+| **Data Processing**      | Pandas 2.1.3 + NumPy 1.24.3 | Feature engineering & data manipulation  |
+| **Network Analysis**     | Scapy 2.5.0                 | Packet capture and protocol analysis     |
+| **Web Framework**        | Flask 3.0.0                 | Dashboard and API development            |
+| **Model Persistence**    | Joblib 1.3.2                | Save/load trained ML models              |
+| **Virtualization**       | VMware Workstation          | Isolated testing environment             |
+| **Operating System**     | Kali Linux                  | Security-focused development environment |
+
+---
+
+### Development Tools
+
+#### **Network Security Tools:**
+- **Scapy**: Packet manipulation and network discovery
+- **TCPDump**: Network traffic analysis and debugging
+- **Wireshark** (implicit): Protocol analysis reference
+
+#### **Data Science Tools:**
+- **Jupyter Notebooks** (potential): Data exploration and model prototyping
+- **Matplotlib/Seaborn**: Data visualization and model evaluation
+- **NSL-KDD Dataset**: Benchmark dataset for intrusion detection
+
+#### **Web Development:**
+- **HTML5/CSS3/JavaScript**: Frontend dashboard development
+- **Chart.js**: Real-time data visualization
+- **RESTful APIs**: Backend data services
+
+---
+
+### System Architecture Components
+
+#### **Backend Services:**
+```python
+# Core components
+- Packet Sniffer (Scapy)
+- Feature Extractor (Pandas)
+- ML Classifier (Scikit-learn)
+- Web Server (Flask)
+- API Endpoints (REST)
+```
+
+#### **Frontend Components:**
+```html
+- Real-time Dashboard (HTML/CSS/JS)
+- Live Charts (Chart.js)
+- Auto-refresh Mechanism (JavaScript)
+- Responsive Design (CSS Grid/Flexbox)
+```
+
+#### **Data Flow:**
+```
+Network Packets → Scapy → Feature Extraction → ML Model → Flask API → Web Dashboard
+```
+
+---
+
+### Security Technologies
+
+#### **Network Security:**
+- **Packet Inspection**: Deep packet analysis
+- **Protocol Analysis**: TCP/UDP/ICMP parsing
+- **Threat Detection**: ML-based classification
+- **Real-time Monitoring**: Continuous traffic analysis
+
+#### **System Security:**
+- **VM Isolation**: Safe testing environment
+- **Root Privileges**: Packet capture permissions
+- **Network Segmentation**: Bridged/NAT mode testing
+
+---
+
+### Monitoring & Visualization
+
+#### **Real-time Features:**
+- **Live Packet Capture**: Immediate traffic analysis
+- **Auto-updating Dashboard**: 3-second refresh intervals
+- **Dynamic Charts**: Traffic distribution visualization
+- **Alert Streaming**: Real-time security notifications
+
+#### **UI/UX Technologies:**
+- **Responsive Design**: Works on desktop/mobile
+- **Color-coded Alerts**: Threat severity indicators
+- **Professional Styling**: Portfolio-ready interface
+- **Smooth Animations**: Enhanced user experience
+
+---
+
+### Deployment & Infrastructure
+
+#### **Development Environment:**
+- **VMware Workstation**: Virtual machine management
+- **Kali Linux**: Security-focused OS
+- **Bash Terminal**: Command-line operations
+- **Git**: Version control (implicit)
+
+#### **Production Readiness:**
+- **Modular Architecture**: Separated concerns
+- **Error Handling**: Graceful failure recovery
+- **Performance Optimization**: Efficient packet processing
+- **Documentation**: Code comments and structure
+
+---
+
+### Skill Categories Demonstrated
+
+|    **Skill Category**     |           **Technologies**                 |
+|---------------------------|--------------------------------------------|
+| **Machine Learning**      | Scikit-learn, Pandas, NumPy, Joblib        |
+| **Network Security**      | Scapy, TCPDump, Protocol Analysis          |
+| **Web Development**       | Flask, HTML/CSS/JS, Chart.js, REST APIs    |
+| **System Administration** | Kali Linux, VMware, Bash, Permissions      |
+| **Data Engineering**      | Data Processing, Feature Extraction, ETL   |
+| **Cybersecurity**         | Intrusion Detection, Threat Classification |
+
+---
+
+### Industry-Standard Stack
+
+This project uses a **modern, industry-relevant technology stack** that mirrors real-world cybersecurity and ML platforms:
+
+```
+[Data Source] → [Processing] → [ML Engine] → [Visualization] → [Monitoring]
+    ↓             ↓             ↓             ↓             ↓
+ Network →    Scapy/Pandas → Scikit-learn → Flask/JS → Real-time Dashboard
+ Packets
+```
+
+---
+
+## Professional Value
+
+These technologies are **highly sought after** in:
+- **Cybersecurity Engineer** roles
+- **ML Engineer** positions  
+- **Full-Stack Developer** jobs
+- **DevSecOps** careers
+- **Security Analyst** positions
 
 
 
