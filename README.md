@@ -10,7 +10,7 @@
 
 
 
-## 🎯OVERALL PROJECT OBJECTIVE
+## OVERALL PROJECT OBJECTIVE
 
 
 ### Primary Objective
