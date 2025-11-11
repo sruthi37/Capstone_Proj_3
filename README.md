@@ -1077,21 +1077,42 @@ NIDS works as a **24/7 automated security guard** that:
 
 Below I have attached all the screenshots of Project's output.
 
-1. This image is the **Terminal of Kali Linux** where we use this **cd ~/NIDS_Project** cmd to open the project file & to run the project we use this **python3 app.py** cmd. Here the **network packets** are been generated after opening the **Network Intrusion Detection Application**.
+1. This image is the **Terminal of Kali Linux** where we use this **cd ~/NIDS_Project** cmd to open the project file & to run the project, we use this **python3 app.py** cmd. Here the **network packets** are been generated after opening the **Network Intrusion Detection Application**.
 
 <img width="1280" height="800" alt="Screenshot_2025-10-25_03_04_30" src="https://github.com/user-attachments/assets/3beb3798-f0cf-40be-b34b-06645c4249e8" />
 
 
-2. This image is the page of the **NIDS application** which detects the network intrsion and attacks that been done in **http://192.168.29.204:5000/**.
+
+
+2. This image is the page of the **NIDS application** which detects the **network intrusion and attacks** that been done in **http://192.168.29.204:5000/**.
+
 <img width="1890" height="884" alt="Screenshot 2025-10-25 125604" src="https://github.com/user-attachments/assets/17f623fe-d8a1-4526-8e8b-b27764f1d9ee" />
 
 
-3. This image indicates the 
+
+
+3. This image indicates the **Port scanning, Suspicious login and different Attacks** that are been detected in this system.
+
 <img width="1919" height="869" alt="Screenshot 2025-10-25 123411" src="https://github.com/user-attachments/assets/f027a12a-1961-4e61-8149-1f062f5dfaa1" />
+
+
+
+
+4. This image indicates the 
 
 <img width="1918" height="884" alt="Screenshot 2025-10-25 123300" src="https://github.com/user-attachments/assets/d4ed9a2f-aba1-4c52-b484-88cfdd34da16" />
 
+
+
+
+5. This image indicates the 
+
 <img width="1907" height="883" alt="Screenshot 2025-10-25 123315" src="https://github.com/user-attachments/assets/99859330-1aac-4452-b33c-a82326b00551" />
+
+
+
+
+6. This image indicates the 
 
 <img width="1912" height="884" alt="Screenshot 2025-10-25 123351" src="https://github.com/user-attachments/assets/fa684adb-43cb-4044-b341-fb7c207a9a2c" />
 
